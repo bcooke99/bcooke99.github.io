@@ -1,5 +1,5 @@
 body
-{background-color:blanchedalmond ;
+{background-color:rgb(193, 165, 123) ;
 font-family: Helvetica, Arial, sans-serif;
 margin: 0px;
 }
@@ -10,7 +10,7 @@ margin: 0px;
 ul{margin: 0px;}
 
 body>header {
-    background-color: orange; color: rgb(21, 38, 215);
+    background-color: rgb(90, 62, 160); color: rgb(0, 0, 0);
     display: flex;
     height: 12vh;
     align-items: center;
@@ -39,6 +39,30 @@ body>header>nav>ul{
     border-radius: 15%;
 }
 
+#Ingredients{
+    padding: 0px;
+    margin: 0%;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted #ffffff;
+        height: 1px;
+  }
+
+#me {
+    height: 100px;
+    width: 100px;
+}
+
+#Thalia{
+    border-radius: 1%;
+    height: 333px;
+    width: 500px;
+    display: block;
+    margin-left: 50vw;
+}
+
 body>main article{
     width: 70%;
     margin: auto;
@@ -57,29 +81,55 @@ form{
     text-align: center;
 }
 
+form > input{
+    margin: 5px;
+}
+
 h2{
     text-align: center;
 }
 
+#signup{
+    font-style: italic;
+}
+
 body>footer{
-    background-color: orange;
+    background-color: rgb(90, 62, 160);
     display: flex;
 } 
 
 #footer-ul{
+    text-align: left;
     display: flex;
-    list-style: none;
+
 }
 
-#footer-ul > div> li{
+#footer-ul > li{
     margin-left: 12px; 
+    display: flex;
+    padding: 8px;
+    margin: 12px;
+    margin-top: 16px;
+    font-size: smaller;
 }
 
-#footer-ul > div> li > a{
+#footer-ul > li > a{
     text-decoration: none;
     color: white;
+    float: right;
 }
 
 img{
     border-radius: 50%;
+}
+
+#flexfooter{
+    display: flex;
+    align-items: flex-end  ;
+    flex-wrap: wrap;
+}
+
+#footermain{
+    flex-grow: 1;
+    text-align: left;
 }
